@@ -15,13 +15,13 @@ class Etablissement extends Component {
 
     render(){
         return <div className="etablissement">
-            <h1>Le nombre de stagiaires : {this.state.stags.length}</h1>
+            <h1 className="nombre">Le nombre de stagiaires : {this.state.stags.length}</h1>
             {this.state.stags.map(item => 
                 <Stagiaire key={item.id} nom={item.nom} age={item.age} filiere={item.filiere} image={item.image}/>
                 )}
 
 
-                <div>
+                <div className="buttons">
                     <button onClick={() => this.setState({stags : []})}>CLEAR ALL</button>
                     <button onClick={() => this.setState({stags : this.props.stagiaires})}>ALL</button>
                     <button onClick={() => this.setState({stags : this.props.stagiaires.filter(item => item.filiere === 'TDI')})}>Filiere TDI</button>
