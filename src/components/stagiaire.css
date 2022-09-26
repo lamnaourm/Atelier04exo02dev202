@@ -1,0 +1,20 @@
+.stagiaire {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.stagiaire img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.stagiaire h1{
+    font-size: 12px;
+}
+
+.stagiaire h3{
+    font-size: 10px;
+}
